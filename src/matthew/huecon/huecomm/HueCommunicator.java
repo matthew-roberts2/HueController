@@ -1,8 +1,6 @@
 package matthew.huecon.huecomm;
 
 import matthew.huecon.huecomm.IPStatusEnum;
-import matthew.huecon.util.HueIP;
-import matthew.huecon.util.HueTimer;
 import matthew.huecon.util.URLReader;
 
 public class HueCommunicator {
