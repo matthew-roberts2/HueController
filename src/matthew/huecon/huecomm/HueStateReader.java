@@ -3,7 +3,7 @@ package matthew.huecon.huecomm;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
-import matthew.huecon.Reference;
+import matthew.huecon.reference.Reference;
 import matthew.huecon.util.URLReader;
 
 public class HueStateReader {

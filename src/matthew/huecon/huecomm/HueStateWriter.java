@@ -6,7 +6,7 @@ import java.net.URL;
 
 import org.json.simple.JSONObject;
 
-import matthew.huecon.Reference;
+import matthew.huecon.reference.Reference;
 
 public class HueStateWriter {
 	private static HueStateWriter writer;

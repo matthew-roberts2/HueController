@@ -52,10 +52,11 @@ public abstract class HueGUI extends JFrame{
 		return (monitorSize/2)-(size/2);
 	}
 	
-	/*
+	/**\
 	 * Override this method if there are JComponents that need to be added to the Window
 	 */
-	protected void addObjects(){
-		//NO-OP
-	}
+	protected abstract void addObjects();
+	
+	public int getWidth(){ return width; }
+	public int getHeight(){ return height; }
 }

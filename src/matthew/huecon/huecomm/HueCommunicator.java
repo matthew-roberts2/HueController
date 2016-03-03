@@ -5,7 +5,7 @@ import matthew.huecon.util.URLReader;
 
 public class HueCommunicator {
 	
-	private static boolean is_created = false;
+	private static boolean created = false;
 	
 	private static HueCommunicator hue_communicator;
 	private static HueBridge hue_bridge;
@@ -38,7 +38,7 @@ public class HueCommunicator {
 	}
 	
 	public static void create(IPStatusEnum function, String argument){
-		if(!is_created){
+		if(!created){
 			hue_communicator = new HueCommunicator(function, argument);
 		}
 		System.out.println("Instance of HueCommunicator created.");
@@ -57,7 +57,7 @@ public class HueCommunicator {
 	}
 	
 	public boolean hasBeenCreated(){
-		return is_created;
+		return created;
 	}
 	
 	public HueStateReader getStateReader(){

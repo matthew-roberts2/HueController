@@ -12,7 +12,7 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
-import matthew.huecon.Reference;
+import matthew.huecon.reference.Reference;
 
 public class URLReader {
 	public static String read(String address){
