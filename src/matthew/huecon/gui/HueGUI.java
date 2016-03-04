@@ -6,6 +6,10 @@ import java.awt.GraphicsEnvironment;
 import javax.swing.JFrame;
 
 public abstract class HueGUI extends JFrame{
+	/**
+	 * Pre-Generated serialUID
+	 */
+	private static final long serialVersionUID = -9195085057772511569L;
 	private int width, height;
 	
 	private enum Direction{X,Y}
@@ -21,12 +25,12 @@ public abstract class HueGUI extends JFrame{
 	 * @see JFrame
 	 */
 	public HueGUI(int height, int width, String windowName){
+		super(windowName);
 		this.width = width;
 		this.height = height;
 		this.setBounds(getScreenModdedPos(this.width, Direction.X),
 					   getScreenModdedPos(this.height, Direction.Y),
 					   this.width, this.height);
-		this.getContentPane().setName(windowName);
 		this.setResizable(false);
 		this.addObjects();
 		this.setVisible(true);
@@ -52,7 +56,7 @@ public abstract class HueGUI extends JFrame{
 		return (monitorSize/2)-(size/2);
 	}
 	
-	/**\
+	/**
 	 * Override this method if there are JComponents that need to be added to the Window
 	 */
 	protected abstract void addObjects();
